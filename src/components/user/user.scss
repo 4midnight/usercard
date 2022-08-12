@@ -1,0 +1,144 @@
+.user {
+  height: 100vh;
+  padding: $indent;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &-inner {
+    padding: $indent * 2 $indent * 3;
+    box-shadow: 1px 1px 5px #ccc;
+  }
+
+  &-box {
+    display: flex;
+    gap: $indent * 2;
+    margin-bottom: $indent;
+  }
+
+  &-img__box {
+    border: 1px solid #eee;
+    padding: $indent;
+
+    .user-img {
+      margin-bottom: $indent;
+
+      .img {
+        width: 150px;
+        height: 175px;
+
+        padding: $indent * 3 $indent * 2;
+
+        background-color: rgb(45, 19, 160);
+
+        text-align: center;
+        color: #fff;
+        font-size: $indent * 4;
+      }
+    }
+
+    .user-img__prof {
+      text-align: center;
+      font-size: $indent * 1.2;
+      font-weight: 500;
+    }
+  }
+
+  &-info__box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .user-info__name {
+      margin-bottom: $indent;
+    }
+
+    .user-info__birthday {
+      span {
+        font-weight: 500;
+      }
+    }
+  }
+
+  &-add__box {
+    display: flex;
+    align-items: center;
+  }
+  .user-update {
+    display: flex;
+    align-items: center;
+  }
+  .user-add__form {
+    display: flex;
+    flex-direction: column;
+
+    .user-add__input {
+      padding: $indent * 0.5;
+      margin-bottom: $indent;
+      margin-left: $indent * 0.3;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    input[type="date"] {
+      padding: $indent * 0.3;
+    }
+  }
+
+  .error {
+    color: rgb(252, 31, 31);
+    font-weight: 600;
+    font-size: $indent * 1.2;
+    margin-bottom: $indent;
+  }
+
+  .error-input {
+    border: none;
+    border: 2px solid rgb(252, 31, 31);
+  }
+
+  .user-btn {
+    padding: $indent * 0.8 0;
+
+    border: 2px solid rgb(38, 45, 255);
+    background-color: rgb(64, 43, 201);
+    color: #fff;
+
+    font-size: $indent * 1.2;
+    font-weight: 600;
+
+    border-radius: 3px;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      background-color: rgb(58, 39, 182);
+    }
+  }
+
+  .btn-update{
+    display: block;
+    width: 100%;
+    padding: $indent * 0.8 0;
+
+    border: 2px solid rgb(38, 45, 255);
+    background-color: rgb(64, 43, 201);
+    color: #fff;
+
+    font-size: $indent * 1.2;
+    font-weight: 600;
+
+    border-radius: 3px;
+    cursor: pointer;
+
+    transition: all 0.3s ease-in;
+
+    &:hover {
+      background-color: rgb(58, 39, 182);
+    }
+  }
+}

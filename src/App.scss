@@ -1,0 +1,10 @@
+@import "./Sass/var";
+@import './Sass/zeroing.scss';
+@import "./components/user/user.scss";
+
+.container{
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 $indent;
+  margin: 0 auto;
+}
